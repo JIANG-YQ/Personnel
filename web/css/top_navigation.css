@@ -1,0 +1,179 @@
+.nav,
+.nav + label{
+  width: 10%;
+  height: 34px;
+  line-height: 34px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.nav{
+  margin: auto;
+  opacity: 0;
+  z-index: 1000;
+}
+
+.nav + label{
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  z-index: 10;
+}
+
+#home-page,
+#home-page + label{
+  left: 0%;
+}
+
+#pwd-manage,
+#pwd-manage + label{
+  left: 10%;
+}
+
+#basis-info,
+#basis-info + label{
+  left: 20%;
+}
+
+#user-manage,
+#user-manage + label{
+  left: 30%;
+}
+
+#work-manage,
+#work-manage + label{
+  left: 30%;
+}
+
+#stuff-manage,
+#stuff-manage + label{
+  left: 40%;
+}
+
+#salary-manage,
+#salary-manage + label{
+  left: 50%;
+}
+
+#labUserName{
+  width: 10%;
+  height: 34px;
+  line-height: 34px;
+  position: absolute;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  z-index: 10;
+  left: 90%;
+}
+
+.nav:checked + label{
+  background: lightblue;
+  color: white;
+  border-radius: 10px;
+}
+
+#home-page:checked ~ .contant-form > .contant > #work-manage-container,
+#home-page:checked ~ .contant-form > .contant > #stuff-manage-container,
+#home-page:checked ~ .contant-form > .contant > #salary-manage-container,
+#home-page:checked ~ .contant-form > .contant > #pwd-manage-container,
+#home-page:checked ~ .contant-form > .contant > #basis-info-container,
+#home-page:checked ~ .contant-form > .contant > #user-manage-container{
+  z-index: 10;
+  display: none;
+}
+
+#home-page:checked ~ .contant-form > .contant > #notice-list-container{
+  z-index: 100;
+  display: block;
+}
+
+#basis-info:checked ~ .contant-form > .contant > #work-manage-container,
+#basis-info:checked ~ .contant-form > .contant > #notice-list-container,
+#basis-info:checked ~ .contant-form > .contant > #stuff-manage-container,
+#basis-info:checked ~ .contant-form > .contant > #salary-manage-container,
+#basis-info:checked ~ .contant-form > .contant > #pwd-manage-container,
+#basis-info:checked ~ .contant-form > .contant > #user-manage-container{
+  z-index: 10;
+  display: none;
+}
+
+#basis-info:checked ~ .contant-form > .contant > #basis-info-container{
+  z-index: 100;
+  display: block;
+}
+
+#work-manage:checked ~ .contant-form > .contant > #notice-list-container,
+#work-manage:checked ~ .contant-form > .contant > #stuff-manage-container,
+#work-manage:checked ~ .contant-form > .contant > #salary-manage-container,
+#work-manage:checked ~ .contant-form > .contant > #pwd-manage-container,
+#work-manage:checked ~ .contant-form > .contant > #basis-info-container,
+#work-manage:checked ~ .contant-form > .contant > #user-manage-container{
+  z-index: 10;
+  display: none;
+}
+
+#work-manage:checked ~ .contant-form > .contant > #work-manage-container{
+  z-index: 100;
+  display: block;
+}
+
+#stuff-manage:checked ~ .contant-form > .contant > #work-manage-container,
+#stuff-manage:checked ~ .contant-form > .contant > #notice-list-container,
+#stuff-manage:checked ~ .contant-form > .contant > #salary-manage-container,
+#stuff-manage:checked ~ .contant-form > .contant > #pwd-manage-container,
+#stuff-manage:checked ~ .contant-form > .contant > #basis-info-container,
+#stuff-manage:checked ~ .contant-form > .contant > #user-manage-container{
+  z-index: 10;
+  display: none;
+}
+
+#stuff-manage:checked ~ .contant-form > .contant > #stuff-manage-container{
+  z-index: 100;
+  display: block;
+}
+
+#salary-manage:checked ~ .contant-form > .contant > #work-manage-container,
+#salary-manage:checked ~ .contant-form > .contant > #notice-list-container,
+#salary-manage:checked ~ .contant-form > .contant > #stuff-manage-container,
+#salary-manage:checked ~ .contant-form > .contant > #pwd-manage-container,
+#salary-manage:checked ~ .contant-form > .contant > #basis-info-container,
+#salary-manage:checked ~ .contant-form > .contant > #user-manage-container{
+  z-index: 10;
+  display: none;
+}
+
+#salary-manage:checked ~ .contant-form > .contant > #salary-manage-container{
+  z-index: 100;
+  display: block;
+}
+
+#pwd-manage:checked ~ .contant-form > .contant > #work-manage-container,
+#pwd-manage:checked ~ .contant-form > .contant > #notice-list-container,
+#pwd-manage:checked ~ .contant-form > .contant > #stuff-manage-container,
+#pwd-manage:checked ~ .contant-form > .contant > #salary-manage-container,
+#pwd-manage:checked ~ .contant-form > .contant > #basis-info-container,
+#pwd-manage:checked ~ .contant-form > .contant > #user-manage-container{
+  z-index: 10;
+  display: none;
+}
+
+#pwd-manage:checked ~ .contant-form > .contant > #pwd-manage-container{
+  z-index: 100;
+  display: block;
+}
+
+#user-manage:checked ~ .contant-form > .contant > #work-manage-container,
+#user-manage:checked ~ .contant-form > .contant > #notice-list-container,
+#user-manage:checked ~ .contant-form > .contant > #stuff-manage-container,
+#user-manage:checked ~ .contant-form > .contant > #salary-manage-container,
+#user-manage:checked ~ .contant-form > .contant > #basis-info-container,
+#user-manage:checked ~ .contant-form > .contant > #pwd-manage-container{
+  z-index: 10;
+  display: none;
+}
+
+#user-manage:checked ~ .contant-form > .contant > #user-manage-container{
+  z-index: 100;
+  display: block;
+}

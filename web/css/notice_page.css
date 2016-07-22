@@ -1,0 +1,24 @@
+#notice-list-container{
+  position: absolute;
+}
+
+.notice-list{
+  display: inline-block;
+  width: 49%;
+  margin: 0 5px;
+}
+
+.notice-list-panel,
+#notice-list-container{
+  width: 100%;
+  margin: 0;
+}
+
+.notice-title{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.notice-item:hover{
+  color: red;
+}
